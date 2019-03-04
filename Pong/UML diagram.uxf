@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>190</y>
+      <w>320</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>CanvasController
+--
+-WIDTH = 800: int
+-HEIGHT = 600: int
+-PADDLE_HEIGHT = 70: int
+-PADDLE_WIDTH = 15: int
++drawingCanvas: Canvas
+-ballX = WIDTH / 2, ballY = HEIGHT / 2: int
+-ballWidth = 20, ballHeight = 20: int
+-ballXVelocity = 4, ballYVelocity = 4: int
+-ballColor = Color.WHITE: Color
+-player1Score = 0: int
+-player2Score = 0: int
+-g: GraphicsContext
+-leftYPos = HEIGHT / 2: double
+-rightYPos = HEIGHT / 2: double
+-timeline: Timeline
+-keyPressed = new EventHandler&lt;KeyEvent&gt;()
+--
+~init(Stage stage): void
+-draw(): void
+-run(): void
+-drawSplit(GraphicsContext g, Color color): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>190</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Main
+--
++main(String[] args): void
++start(Stage stage): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>210</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;60.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>320</x>
+      <y>160</y>
+      <w>570</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>edu.neumont.lopez
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
